@@ -1,0 +1,9 @@
+import base64
+
+password = input("Input: ")
+encoded_da = base64.b64encode(password.encode('utf-8'))
+decoded_da = base64.b64decode(encoded_da).decode('utf-8')
+
+print("Original password: ", password)
+print("Encoded password: ", encoded_da)
+print("Decoded password: ", decoded_da)
